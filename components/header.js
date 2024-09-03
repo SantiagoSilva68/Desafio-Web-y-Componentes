@@ -24,7 +24,7 @@ function header(head) {
     <div class="close-icon" id="closeIcon">&times;</div>
     <ul>
       <a href="https://santiagosilva68.github.io/Desafio-Web-y-Componentes/portfolio.html"><li class="li--menu--corto">Portfolio</li></a>
-      <li class="li--menu--corto"><a href="/index.html#servicios" id="serviciosLink">Servicios</a></li>
+      <li class="li--menu--corto"><a href="./index.html#servicios" id="serviciosLink">Servicios</a></li>
       <a href="https://santiagosilva68.github.io/Desafio-Web-y-Componentes/contacto.html"><li class="li--menu--corto">Contacto</li></a>
     </ul>
   </nav>
