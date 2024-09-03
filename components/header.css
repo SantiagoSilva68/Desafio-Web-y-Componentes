@@ -29,6 +29,10 @@ header {
     }
 }
 
+@media (max-width: 375px){
+
+}
+
 .nav-large ul {
     list-style: none;
     display: flex;
