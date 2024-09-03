@@ -240,6 +240,7 @@ html {
     flex-direction: column;
     width: 100%;
     height: 100px;
+    gap: 10px;
 }
 .contactos-input-name{
     min-height: 59px;
