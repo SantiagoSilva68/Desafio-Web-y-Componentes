@@ -4,13 +4,20 @@ function header(head) {
   <header>
     <a href="https://santiagosilva68.github.io/Desafio-Web-y-Componentes/index.html"><img class="logo" src="./footer-images/logo.png" alt=""></a>
     <div class="menu-icon" id="menuIcon">&#9776;</div>
-    <nav class="nav-large">
-      <ul>
-        <a href="/Desafio-Web-y-Componentes/portfolio.html"><li class="li--menu--largo">Portfolio</li></a>
-        <li class="li--menu--largo"><a href="#servicios">Servicios</a></li>
-        </ul>
-        <a href="https://santiagosilva68.github.io/Desafio-Web-y-Componentes/contacto.html"><li class="li--menu--largo">Contacto</li></a>
-    </nav>
+<nav class="nav-large">
+  <ul>
+    <li class="li--menu--largo">
+      <a href="https://santiagosilva68.github.io/Desafio-Web-y-Componentes/portfolio.html">Portfolio</a>
+    </li>
+    <li class="li--menu--largo">
+      <a href="#servicios">Servicios</a>
+    </li>
+    <li class="li--menu--largo">
+      <a href="https://santiagosilva68.github.io/Desafio-Web-y-Componentes/contacto.html">Contacto</a>
+    </li>
+  </ul>
+</nav>
+
   </header>
   
   <nav class="full-screen-menu" id="fullScreenMenu">
