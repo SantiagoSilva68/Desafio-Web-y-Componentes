@@ -13,7 +13,7 @@ header {
     font-size: 24px;
     max-width: 75px;
     max-height: 75px;
-    margin-left: 50px;
+    margin: 0;
 }
 
 .menu-icon {
@@ -32,9 +32,16 @@ header {
 .nav-large ul {
     list-style: none;
     display: flex;
-    gap: 60px;
+    gap: 50px;
     margin-right: 50px;
     padding: 0;
+}
+
+@media (max-width: 520px){
+    .nav-large ul{
+        margin-right: 0px;
+        gap: 30px;
+    }
 }
 
 .nav-large ul li a {
