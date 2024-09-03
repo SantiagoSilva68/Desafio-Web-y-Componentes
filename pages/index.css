@@ -1,6 +1,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
+    backround-color: #13171C;
 }
 .contenedor-bienvenida{
     min-width: 375px;
