@@ -37,7 +37,6 @@ body{
     flex-direction: row;
     gap: 10px;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .contenedor-nombre{
     display: flex;
