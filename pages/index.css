@@ -235,14 +235,7 @@ html {
     }
 }
 }
-.contenedor-nombre{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    height: 100px;
-}
-.contenedor-email{
+.contenedor-nombre, .contenedor-email{
     display: flex;
     flex-direction: column;
     gap: 10px;
