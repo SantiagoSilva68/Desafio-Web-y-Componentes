@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/footer.css">
+    <link rel="stylesheet" href="pages/contacto.css">
+    <script defer src="./components/header.js"></script>
+    <script defer src="./components/footer.js"></script>
+    <script defer src="./pages/contacto.js"></script>
+    <script defer src="./pages/index.js"></script>
+</head>
+<body>
+    <div class="contenedor-contactos">
+    <div class="contenedor-header"></div>
+    <div class="contenedor-contacto">
+        <h1 class="escribime">Escribime</h1>
+        <form id="contactForm" class="myForm">
+            <div class="contenedor-nombre-email">
+                <div class="contenedor-nombre">
+            <label for="name" class="contactos-label-name">Nombre</label>
+            <input type="text" id="name" class="contactos-input-name" placeholder="Tu nombre">
+        </div>
+            <div class="contenedor-email">
+            <label for="email" class="contactos-label-email">Email</label>
+            <input type="email" id="email" class="contactos-input-email" placeholder="tu@mail.com">
+            </div>
+        </div>
+        <div class="contenedor-mensaje-boton">
+            <label for="mensaje" class="contactos-label-mensaje">Mensaje</label>
+            <textarea id="mensaje" class="contactos-input-mensaje"></textarea>
+            <button type="submit" class="contactos-button">Enviar <img src="./footer-images/send.png" alt="" class="send"></button>
+        </div>
+        </form>
+    </div>
+    <div class="contenedor-footer-portfolio"></div>
+    </div>
+</body>
+</html>

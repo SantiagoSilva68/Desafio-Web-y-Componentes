@@ -1,0 +1,69 @@
+.contenedor-div {
+    width: 100%;
+    min-width: 375px;
+    height: 400px;
+    background-color: #13171C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 375px) {
+.contenedor-div{
+    min-width: 375px;
+    background-color: #0F1113;
+    max-height: 534px;
+    height: 534px;
+}
+}
+.logo-footer {
+    width: 75px;
+    height: 75px;
+    margin-top: 35px;
+}
+
+.contendor-apartados {
+    max-width: 447px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px
+}
+@media(max-width: 375px) {
+    .contendor-apartados{
+        width: 139px;
+        min-height: 141px;
+        display: flex;
+        flex-direction: column;
+}
+}
+
+.contendor-redes {
+    width: 192px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+@media(max-width: 375px){   
+    .contendor-redes{
+        margin-top: 30px;
+}
+}
+.imagenes {
+    width: 108px;
+    height: 47px;
+}
+
+.imagenes-redes {
+    width: 48px;
+    height: 48px;
+}
+
+.copyright {
+    color: white;
+    text-decoration: none;
+    margin-top: 77px;
+}
+ 

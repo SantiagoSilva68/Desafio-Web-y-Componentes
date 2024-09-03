@@ -1,0 +1,357 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor-bienvenida{
+    min-width: 375px;
+    height: auto;
+    background-color: #13171C;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+    );
+}
+@media (max-width: 375px) {
+    .contenedor-bienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+.logo-cohete{
+    width: 23vw;
+    height: auto;
+    max-width: 353px;
+    max-height: 340px;
+    margin: 31% 32% 47.5% 15.5%;
+    min-width: 150px;
+    min-height: 150px;
+
+}
+@media (max-width: 375px) {
+    .logo-cohete{
+        min-width:219px;
+        min-height: 211px;
+        margin-top: 15%;
+        margin: 54px 87px 164px 69px;
+    }
+}
+.title-bienvenida{
+    color: #00ADB5;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #00ADB5;
+    text-align: left;
+    height: 60%;
+    width: 100%;
+}
+@media (max-width: 375px){
+    .title-bienvenida{
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .title-bienvenida, .hola {
+        font-size: min(calc(6.66vw + 20px), 70px);
+    }
+}
+.hola{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+    color: white;
+    text-align: left;
+    height: 60%;
+    width: 100%;
+    font-weight: 700;
+}
+.title-bienvenida, .hola {
+    font-size: clamp(70px, calc(6.66vw + 20px), 100px);
+}
+
+.contenedor-titulo-bienvenida{
+    text-align: left;
+    width: 100%;
+    height: 23%;
+    line-height: 1;
+    margin: 40% 15.5% 70% 26.5%;
+}
+@media (max-width: 875px){
+    .contenedor-titulo-bienvenida{
+     width: 80%;   
+    }
+}
+@media (max-width: 375px){
+    .contenedor-titulo-bienvenida{
+        width: 288px;
+        height: 225px;
+        margin: 70px 43px 54px 44px;
+        text-align: center;
+    }
+}
+
+
+.contenedor-presentacion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #192130;
+    height: 935px;
+}
+@media (max-width: 375px){
+    .contenedor-presentacion{
+        width: 100%;
+    }
+        
+}
+
+.contenedor-info-presentacion {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    margin: 5%;
+}
+
+.nombre {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: white;
+    font-size: 6rem;
+    margin: 0;
+    align-self: center;
+    font-family: "Poppins";
+
+}
+@media (max-width: 510px)
+{    
+    .nombre{
+    font-size: 3rem;
+}   
+}
+@media (max-width: 1224px)
+{
+    .nombre{
+    font-size: 4rem;
+}
+}
+
+.descripcion {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.2;
+    align-self: start;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.ragnar {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    max-width: 623px;
+    width: 100%;
+    height: auto;
+    margin-right: 10%;
+}
+
+@media (max-width: 768px) {
+    .contenedor-info-presentacion {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .ragnar {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        justify-self: center;
+        margin-left: 10%;
+    }
+}
+
+
+/* formulario */
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.escribime{
+    margin: 0;
+    font-family: "poppins";
+    color: white;
+    font-size: 7.6vh;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contenedor-contacto {
+    width: 100%;
+    height: auto;
+    min-height: 1000px;
+    background-color: #13171C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    height: 516px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contenedor-nombre-email{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contenedor-nombre{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+}
+.contenedor-email{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+}
+.contactos-input-name{
+    min-height: 59px;
+    background-color: rgba(57, 62, 70, 0.5);
+    border-radius: 16px;
+    border: solid #13171C 0;
+    padding: 0;
+    color: #EEEEEE;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+.contactos-label-name, .contactos-label-email, .contactos-label-mensaje{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+.contactos-input-email{
+    min-height: 59px;
+    background-color: rgba(57, 62, 70, 0.5);
+    Padding: 16px, 256px, 16px, 24px;
+    border: solid #13171C 0;
+    border-radius: 16px;
+    padding: 0;
+    color: #EEEEEE;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+input::placeholder{
+    padding: 20px;
+}
+.contenedor-mensaje-boton{
+    min-height: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+}
+.contactos-input-mensaje{
+    min-height: 280px;
+    background-color: rgba(57, 62, 70, 0.5);
+    border-radius: 16px;
+    border: solid #13171C 0;
+    padding: 0;
+    color: #EEEEEE;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+.contactos-button{
+    max-width: 231px;
+    min-height: 55px;
+    border-radius: 24px;
+    border: solid #13171C 0;
+    padding: 0;
+    background-color: #00ADB5;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 24px;
+}
+.send{
+    color: white;
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.contactos-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+@media (max-width: 768px) {
+    .contenedor-contacto {
+        flex-direction: column;
+        min-height: 1000px;
+        height: 1000px;
+    }
+    .myForm {
+    width: 85%;
+    height: auto;
+    margin-bottom: 50%;
+    margin-top: 15%;
+    }
+    .escribime {
+        font-size: 5.6vh;
+        margin-top: 10%;
+    }
+    .contactos-input-name, .contactos-input-email, .contactos-input-mensaje {
+        font-size: 14px;
+    }
+    .contenedor-mensaje-boton {
+        min-height: auto;
+    }
+    .contactos-button {
+        font-size: 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.escribime {
+    margin-bottom: 395px;
+}
+
+@media (max-width: 768px) {
+    .escribime {
+        margin-top: 10%;
+        margin-bottom: 0;
+    }
+}
+.verMas{
+    margin-bottom: 80px;
+}
+@media (min-width: 1156px) {
+.verMas{
+    margin-top: 45px;
+}
+}
