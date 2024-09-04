@@ -38,6 +38,13 @@ body{
     gap: 10px;
     justify-content: space-between;
 }
+@media (max-width: 375px) {
+    .contenedor-nombre-email{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 .contenedor-nombre{
     display: flex;
     flex-direction: column;
