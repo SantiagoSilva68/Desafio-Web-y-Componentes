@@ -83,6 +83,7 @@ header {
     text-decoration: none;
 }
 
+
 .close-icon {
     position: absolute;
     top: 20px;
@@ -92,11 +93,13 @@ header {
 }
 .li--menu--largo{
     font-size: 18px;
+    marker: none;
 }
 .li--menu--corto{
-    font-family: "Poppins";
+    font-family: "Poppins"; 
     font-size: 42px;
     font-weight: 500;
+    font-style: normal;
 }
 
 @media (max-width: 375px) {
@@ -106,4 +109,37 @@ header {
     .menu-icon {
         display: block; 
     }
+}
+
+header a {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
+}
+
+header a:hover {
+    color: #00ADB5;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #00ADB5;
+    transition: width 0.3s ease;
+}
+
+header a:hover::after {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
