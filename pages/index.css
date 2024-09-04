@@ -364,3 +364,7 @@ input::placeholder{
     margin-top: 45px;
 }
 }
+a{
+    text-decoration: none;
+    color: white;
+}
